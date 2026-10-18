@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> aabclara | Portfólio — Design Gráfico &amp; Desenvolvimento Web</title>
+  <meta name="description"
+    content="Portfólio de Maria Clara (aabClara): design gráfico, desenvolvimento web, landing pages, UI/UX, edição de vídeo e gestão de projetos.">
+  <meta name="author" content="Maria Clara">
+  <meta name="theme-color" content="#202020">
+
+  <!-- Open Graph / compartilhamento -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="aabClara | Portfólio">
+  <meta property="og:description" content="Design gráfico, desenvolvimento web e soluções criativas com propósito.">
+  <!-- TODO: og:image e og:url após definir a URL do GitHub Pages -->
+
+  <link rel="icon" href="assets/portfolio26/recursos/brilho.svg" type="image/svg+xml">
+
+  <!-- Pré-carrega as fontes usadas acima da dobra -->
+  <link rel="preload" href="assets/portfolio26/fontes/FunnelDisplay-VariableFont_wght.ttf" as="font" type="font/ttf"
+    crossorigin>
+  <link rel="preload" href="assets/portfolio26/fontes/Retrogression-Regular.otf" as="font" type="font/otf" crossorigin>
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/hero.css">
+
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header" id="topo">
+    <div class="container site-header__inner">
+      <a class="site-header__logo" href="#inicio" aria-label="aabClara — voltar ao início">
+        <img src="assets/portfolio26/recursos/logo_aabclara.svg" alt="aabClara" width="165" height="72">
+      </a>
+
+      <nav aria-label="Redes sociais">
+        <!-- TODO: substituir os href="#" pelos links reais -->
+        <ul class="social" role="list">
+          <li><a class="social__link" id="social-whatsapp" href="#" target="_blank" rel="noopener" data-label="WhatsApp"
+              aria-label="WhatsApp">
+              <img src="assets/portfolio26/recursos/icone_whatsapp.svg" alt="" width="30" height="30"></a></li>
+          <li><a class="social__link" id="social-pinterest" href="#" target="_blank" rel="noopener"
+              data-label="Pinterest" aria-label="Pinterest">
+              <img src="assets/portfolio26/recursos/icone_pinterest.svg" alt="" width="30" height="30"></a></li>
+          <li><a class="social__link" id="social-instagram" href="#" target="_blank" rel="noopener"
+              data-label="Instagram" aria-label="Instagram">
+              <img src="assets/portfolio26/recursos/icone_instagram.svg" alt="" width="30" height="30"></a></li>
+          <li><a class="social__link" id="social-linkedin" href="#" target="_blank" rel="noopener" data-label="LinkedIn"
+              aria-label="LinkedIn">
+              <img src="assets/portfolio26/recursos/icone_linkedin.svg" alt="" width="30" height="30"></a></li>
+          <li><a class="social__link" id="social-email" href="#" data-label="E-mail" aria-label="E-mail">
+              <img src="assets/portfolio26/recursos/icone_email.svg" alt="" width="30" height="30"></a></li>
+          <li><a class="social__link" id="social-github" href="#" target="_blank" rel="noopener" data-label="GitHub"
+              aria-label="GitHub">
+              <img src="assets/portfolio26/recursos/icone_github.svg" alt="" width="30" height="30"></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="header-spacer" aria-hidden="true"></div>
+
+  <main id="conteudo">
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="inicio" aria-label="Início">
+      <div class="hero__content">
+        <img class="hero__logo" src="assets/portfolio26/recursos/logo_aabclara_escura.svg" alt="aabClara" width="165"
+          height="72">
+        <h1 class="hero__title" aria-label="Portfólio">
+          <img class="sparkle sparkle--left" src="assets/portfolio26/recursos/brilho.svg" alt="" width="63" height="76">
+          <span class="hero__word" aria-hidden="true">
+            <span class="script" style="--i:0">P</span><span style="--i:1">o</span><span style="--i:2">r</span><span
+              style="--i:3">t</span><span class="script" style="--i:4">F</span><span style="--i:5">ó</span><span
+              style="--i:6">l</span><span style="--i:7">i</span><span style="--i:8">o</span>
+          </span>
+          <img class="sparkle sparkle--right" src="assets/portfolio26/recursos/brilho.svg" alt="" width="63"
+            height="76">
+        </h1>
+      </div>
+    </section>
+
+    <!-- ================= SERVIÇOS (marquee) ================= -->
+    <!-- O JS repete os itens e clona a faixa para o loop ficar contínuo -->
+    <div class="marquee" aria-label="Serviços">
+      <ul class="marquee__track" role="list">
+        <li class="marquee__item">Design Gráfico</li>
+        <li aria-hidden="true"><img class="marquee__sparkle" src="assets/portfolio26/recursos/brilho.svg" alt=""
+            width="63" height="76"></li>
+        <li class="marquee__item">Desenvolvimento Web</li>
+        <li aria-hidden="true"><img class="marquee__sparkle" src="assets/portfolio26/recursos/brilho.svg" alt=""
+            width="63" height="76"></li>
+        <li class="marquee__item">Landing Pages</li>
+        <li aria-hidden="true"><img class="marquee__sparkle" src="assets/portfolio26/recursos/brilho.svg" alt=""
+            width="63" height="76"></li>
+        <li class="marquee__item">UI/UX Design</li>
+        <li aria-hidden="true"><img class="marquee__sparkle" src="assets/portfolio26/recursos/brilho.svg" alt=""
+            width="63" height="76"></li>
+        <li class="marquee__item">Edição de Vídeo</li>
+        <li aria-hidden="true"><img class="marquee__sparkle" src="assets/portfolio26/recursos/brilho.svg" alt=""
+            width="63" height="76"></li>
+        <li class="marquee__item">Gestão de Projetos</li>
+        <li aria-hidden="true"><img class="marquee__sparkle" src="assets/portfolio26/recursos/brilho.svg" alt=""
+            width="63" height="76"></li>
+      </ul>
+    </div>
+    <!-- SOBRE MIM -->
+    <!-- FERRAMENTAS / LINGUAGENS -->
+    <!-- O QUE EU FAÇO -->
+    <!-- MARQUEE aabclara -->
+    <!-- MEUS PROJETOS -->
+    <!-- FALE COMIGO -->
+  </main>
+
+  <!-- FOOTER -->
+</body>
+
+</html>

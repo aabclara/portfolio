@@ -1,0 +1,584 @@
+{
+  "site-2024": [
+    {
+      "src": "assets/img/projetos/site-2024/01-arduino.webp",
+      "w": 1080,
+      "h": 1080,
+      "original": "SITE/Arduíno.png"
+    },
+    {
+      "src": "assets/img/projetos/site-2024/02-design-thinking.webp",
+      "w": 1080,
+      "h": 1080,
+      "original": "SITE/Design Thinking.png"
+    },
+    {
+      "src": "assets/img/projetos/site-2024/03-empreendedorismo-sem-romance.webp",
+      "w": 1080,
+      "h": 1080,
+      "original": "SITE/Empreendedorismo Sem Romance.png"
+    },
+    {
+      "src": "assets/img/projetos/site-2024/04-flutter-para-iniciantes.webp",
+      "w": 1080,
+      "h": 1080,
+      "original": "SITE/Flutter para iniciantes.png"
+    },
+    {
+      "src": "assets/img/projetos/site-2024/05-opcao-3-save-the-date.webp",
+      "w": 1080,
+      "h": 1080,
+      "original": "SITE/opção 3 save the date.png"
+    },
+    {
+      "src": "assets/img/projetos/site-2024/06-site24-palestrantes.webp",
+      "w": 1080,
+      "h": 1080,
+      "original": "SITE/SITE24 Palestrantes.png"
+    },
+    {
+      "src": "assets/img/projetos/site-2024/07-site24-palestrantes-1.webp",
+      "w": 1080,
+      "h": 1080,
+      "original": "SITE/SITE24 Palestrantes (1).png"
+    },
+    {
+      "src": "assets/img/projetos/site-2024/08-site24-posts-inscricoes.webp",
+      "w": 1080,
+      "h": 1080,
+      "original": "SITE/SITE24 Posts_Inscricoes.png"
+    },
+    {
+      "src": "assets/img/projetos/site-2024/09-site24-posts-prog-1.webp",
+      "w": 1080,
+      "h": 1080,
+      "original": "SITE/SITE24 Posts_Prog 1.png"
+    },
+    {
+      "src": "assets/img/projetos/site-2024/10-site24-posts-prog-2.webp",
+      "w": 1080,
+      "h": 1080,
+      "original": "SITE/SITE24 Posts_Prog 2.png"
+    },
+    {
+      "src": "assets/img/projetos/site-2024/11-site24-posts-prog-3.webp",
+      "w": 1080,
+      "h": 1080,
+      "original": "SITE/SITE24 Posts_Prog 3.png"
+    }
+  ],
+  "chapa-nexus": [
+    {
+      "src": "assets/img/projetos/chapa-nexus/01-contracapa.webp",
+      "w": 1400,
+      "h": 1980,
+      "original": "NEXUS/Contracapa.png"
+    },
+    {
+      "src": "assets/img/projetos/chapa-nexus/02-final.webp",
+      "w": 1400,
+      "h": 1980,
+      "original": "NEXUS/final.png"
+    },
+    {
+      "src": "assets/img/projetos/chapa-nexus/03-integrantes-1.webp",
+      "w": 1400,
+      "h": 1980,
+      "original": "NEXUS/integrantes 1.png"
+    },
+    {
+      "src": "assets/img/projetos/chapa-nexus/04-integrantes-2.webp",
+      "w": 1400,
+      "h": 1980,
+      "original": "NEXUS/integrantes 2.png"
+    },
+    {
+      "src": "assets/img/projetos/chapa-nexus/05-integrantes-3.webp",
+      "w": 1400,
+      "h": 1980,
+      "original": "NEXUS/integrantes 3.png"
+    },
+    {
+      "src": "assets/img/projetos/chapa-nexus/06-limitacoes.webp",
+      "w": 1400,
+      "h": 1980,
+      "original": "NEXUS/Limitações.png"
+    },
+    {
+      "src": "assets/img/projetos/chapa-nexus/07-pagina-8.webp",
+      "w": 1400,
+      "h": 1980,
+      "original": "NEXUS/página 8.png"
+    },
+    {
+      "src": "assets/img/projetos/chapa-nexus/08-pagina-11.webp",
+      "w": 1400,
+      "h": 1980,
+      "original": "NEXUS/página 11.png"
+    },
+    {
+      "src": "assets/img/projetos/chapa-nexus/09-plano-de-gestao-nexus.webp",
+      "w": 1400,
+      "h": 1980,
+      "original": "NEXUS/Plano de Gestão Nexus.png"
+    },
+    {
+      "src": "assets/img/projetos/chapa-nexus/10-propostas.webp",
+      "w": 1400,
+      "h": 1980,
+      "original": "NEXUS/Propostas.png"
+    },
+    {
+      "src": "assets/img/projetos/chapa-nexus/11-versao-2.webp",
+      "w": 1400,
+      "h": 1980,
+      "original": "NEXUS/Versão 2.png"
+    },
+    {
+      "src": "assets/img/projetos/chapa-nexus/12-verso.webp",
+      "w": 1400,
+      "h": 1980,
+      "original": "NEXUS/verso.png"
+    }
+  ],
+  "cardoso-freire-posts": [
+    {
+      "src": "assets/img/projetos/cardoso-freire-posts/01-checklist-de-carnaval.webp",
+      "w": 1080,
+      "h": 1350,
+      "original": "CFAC_Posts/CHECKLIST DE CARNAVAL.png"
+    },
+    {
+      "src": "assets/img/projetos/cardoso-freire-posts/02-divisao-1.webp",
+      "w": 1080,
+      "h": 1350,
+      "original": "CFAC_Posts/Divisão 1.png"
+    },
+    {
+      "src": "assets/img/projetos/cardoso-freire-posts/03-divisao-2.webp",
+      "w": 1080,
+      "h": 1350,
+      "original": "CFAC_Posts/Divisão 2.png"
+    },
+    {
+      "src": "assets/img/projetos/cardoso-freire-posts/04-divisao-3.webp",
+      "w": 1080,
+      "h": 1350,
+      "original": "CFAC_Posts/Divisão 3.png"
+    },
+    {
+      "src": "assets/img/projetos/cardoso-freire-posts/05-divisao-4.webp",
+      "w": 1080,
+      "h": 1350,
+      "original": "CFAC_Posts/Divisão 4.png"
+    },
+    {
+      "src": "assets/img/projetos/cardoso-freire-posts/06-divisao-5.webp",
+      "w": 1080,
+      "h": 1350,
+      "original": "CFAC_Posts/Divisão 5.png"
+    },
+    {
+      "src": "assets/img/projetos/cardoso-freire-posts/07-divisao-6.webp",
+      "w": 1080,
+      "h": 1350,
+      "original": "CFAC_Posts/Divisão 6.png"
+    },
+    {
+      "src": "assets/img/projetos/cardoso-freire-posts/08-divisao-7.webp",
+      "w": 1080,
+      "h": 1350,
+      "original": "CFAC_Posts/Divisão 7.png"
+    },
+    {
+      "src": "assets/img/projetos/cardoso-freire-posts/09-post-carnaval.webp",
+      "w": 1080,
+      "h": 1350,
+      "original": "CFAC_Posts/post carnaval.png"
+    },
+    {
+      "src": "assets/img/projetos/cardoso-freire-posts/10-post-dia-mundial-da-saude.webp",
+      "w": 1080,
+      "h": 1350,
+      "original": "CFAC_Posts/POST  Dia Mundial Da Saúde.png"
+    },
+    {
+      "src": "assets/img/projetos/cardoso-freire-posts/11-post-dia-mundial-da-saude-1.webp",
+      "w": 1080,
+      "h": 1350,
+      "original": "CFAC_Posts/POST  Dia Mundial Da Saúde (1).png"
+    },
+    {
+      "src": "assets/img/projetos/cardoso-freire-posts/12-seu-laboratorio-foi-descredenciado-post-para-instagram-45.webp",
+      "w": 1080,
+      "h": 1350,
+      "original": "CFAC_Posts/SEU LABORATÓRIO FOI DESCREDENCIADO (Post para Instagram (45)).png"
+    },
+    {
+      "src": "assets/img/projetos/cardoso-freire-posts/13-1.webp",
+      "w": 1080,
+      "h": 1350,
+      "original": "FEEDBACK - Lab. Claudino/1.png"
+    },
+    {
+      "src": "assets/img/projetos/cardoso-freire-posts/14-2.webp",
+      "w": 1080,
+      "h": 1350,
+      "original": "FEEDBACK - Lab. Claudino/2.png"
+    },
+    {
+      "src": "assets/img/projetos/cardoso-freire-posts/15-3.webp",
+      "w": 1080,
+      "h": 1350,
+      "original": "FEEDBACK - Lab. Claudino/3.png"
+    },
+    {
+      "src": "assets/img/projetos/cardoso-freire-posts/16-4.webp",
+      "w": 1080,
+      "h": 1350,
+      "original": "FEEDBACK - Lab. Claudino/4.png"
+    },
+    {
+      "src": "assets/img/projetos/cardoso-freire-posts/17-5.webp",
+      "w": 1080,
+      "h": 1350,
+      "original": "FEEDBACK - Lab. Claudino/5.png"
+    },
+    {
+      "src": "assets/img/projetos/cardoso-freire-posts/18-6.webp",
+      "w": 1080,
+      "h": 1350,
+      "original": "FEEDBACK - Lab. Claudino/6.png"
+    }
+  ],
+  "cardoso-freire-papelaria": [
+    {
+      "src": "assets/img/projetos/cardoso-freire-papelaria/01-banner.webp",
+      "w": 1400,
+      "h": 788,
+      "original": "CFAC Papelaria/banner.png"
+    },
+    {
+      "src": "assets/img/projetos/cardoso-freire-papelaria/02-certificado.webp",
+      "w": 1400,
+      "h": 788,
+      "original": "CFAC Papelaria/certificado.png"
+    },
+    {
+      "src": "assets/img/projetos/cardoso-freire-papelaria/03-gemini-generated-image-g4mwlmg4mwlmg4mw.webp",
+      "w": 1400,
+      "h": 830,
+      "original": "CFAC Papelaria/Gemini_Generated_Image_g4mwlmg4mwlmg4mw.jpg"
+    },
+    {
+      "src": "assets/img/projetos/cardoso-freire-papelaria/04-selos.webp",
+      "w": 1400,
+      "h": 788,
+      "original": "CFAC Papelaria/selos.png"
+    }
+  ],
+  "cod3beer": [
+    {
+      "src": "assets/img/projetos/cod3beer/01-id-cod3.webp",
+      "w": 1400,
+      "h": 280,
+      "original": "COD3/ID - COD3.png"
+    },
+    {
+      "src": "assets/img/projetos/cod3beer/02-id-cod3-1.webp",
+      "w": 1400,
+      "h": 280,
+      "original": "COD3/ID - COD3 (1).png"
+    },
+    {
+      "src": "assets/img/projetos/cod3beer/03-id-cod3-2.webp",
+      "w": 1400,
+      "h": 280,
+      "original": "COD3/ID - COD3 (2).png"
+    },
+    {
+      "src": "assets/img/projetos/cod3beer/04-codebeer-logos.webp",
+      "w": 500,
+      "h": 500,
+      "original": "COD3/CodeBeer_Logos.png"
+    },
+    {
+      "src": "assets/img/projetos/cod3beer/05-code-1.webp",
+      "w": 1080,
+      "h": 1080,
+      "original": "COD3/Code_1.png"
+    },
+    {
+      "src": "assets/img/projetos/cod3beer/06-code-2.webp",
+      "w": 1080,
+      "h": 1080,
+      "original": "COD3/Code_2.png"
+    },
+    {
+      "src": "assets/img/projetos/cod3beer/07-code-3.webp",
+      "w": 1080,
+      "h": 1080,
+      "original": "COD3/Code_3.png"
+    },
+    {
+      "src": "assets/img/projetos/cod3beer/08-code-9.webp",
+      "w": 1080,
+      "h": 1080,
+      "original": "COD3/Code_9.png"
+    },
+    {
+      "src": "assets/img/projetos/cod3beer/09-code-lote-promocional-1.webp",
+      "w": 1080,
+      "h": 1080,
+      "original": "COD3/Code_LOTE PROMOCIONAL(1).png"
+    },
+    {
+      "src": "assets/img/projetos/cod3beer/10-lote-escuro-1.webp",
+      "w": 1080,
+      "h": 1080,
+      "original": "COD3/lote escuro(1).png"
+    },
+    {
+      "src": "assets/img/projetos/cod3beer/11-modelos-storys.webp",
+      "w": 1080,
+      "h": 1920,
+      "original": "COD3/MODELOS STORYs.png"
+    },
+    {
+      "src": "assets/img/projetos/cod3beer/12-story-lote-promocional-1.webp",
+      "w": 1080,
+      "h": 1920,
+      "original": "COD3/Story_LOTE PROMOCIONAL(1).png"
+    }
+  ],
+  "conecti": [
+    {
+      "src": "assets/img/projetos/conecti/01-cn-matriculas-1.webp",
+      "w": 1400,
+      "h": 1750,
+      "original": "CONECTI/CN MATRÍCULAS 1.png"
+    },
+    {
+      "src": "assets/img/projetos/conecti/02-cn-matriculas-2.webp",
+      "w": 1400,
+      "h": 1750,
+      "original": "CONECTI/CN MATRÍCULAS 2.png"
+    },
+    {
+      "src": "assets/img/projetos/conecti/03-cn-matriculas-3.webp",
+      "w": 1400,
+      "h": 1750,
+      "original": "CONECTI/CN MATRÍCULAS 3.png"
+    },
+    {
+      "src": "assets/img/projetos/conecti/04-cn-matriculas-4.webp",
+      "w": 1400,
+      "h": 1750,
+      "original": "CONECTI/CN MATRÍCULAS 4.png"
+    },
+    {
+      "src": "assets/img/projetos/conecti/05-cn-matriculas-5.webp",
+      "w": 1400,
+      "h": 1750,
+      "original": "CONECTI/CN MATRÍCULAS 5.png"
+    },
+    {
+      "src": "assets/img/projetos/conecti/06-cn-matriculas-6.webp",
+      "w": 1400,
+      "h": 1750,
+      "original": "CONECTI/CN MATRÍCULAS 6.png"
+    },
+    {
+      "src": "assets/img/projetos/conecti/07-cn-matriculas-7.webp",
+      "w": 1400,
+      "h": 1751,
+      "original": "CONECTI/CN MATRÍCULAS 7.png"
+    },
+    {
+      "src": "assets/img/projetos/conecti/08-cn-natal-1.webp",
+      "w": 1080,
+      "h": 1350,
+      "original": "CONECTI/CN NATAL - 1.png"
+    },
+    {
+      "src": "assets/img/projetos/conecti/09-cn-natal-2.webp",
+      "w": 1080,
+      "h": 1350,
+      "original": "CONECTI/CN NATAL - 2.png"
+    },
+    {
+      "src": "assets/img/projetos/conecti/10-cn-natal-3.webp",
+      "w": 1080,
+      "h": 1350,
+      "original": "CONECTI/CN NATAL - 3.png"
+    },
+    {
+      "src": "assets/img/projetos/conecti/11-dia-das-mulheres.webp",
+      "w": 1400,
+      "h": 1750,
+      "original": "CONECTI/dia das mulheres.png"
+    },
+    {
+      "src": "assets/img/projetos/conecti/12-instagram-post-22.webp",
+      "w": 1400,
+      "h": 1750,
+      "original": "CONECTI/Instagram post - 22.png"
+    },
+    {
+      "src": "assets/img/projetos/conecti/13-palestra-saude-mental.webp",
+      "w": 1400,
+      "h": 1750,
+      "original": "CONECTI/PALESTRA - Sáude Mental.png"
+    },
+    {
+      "src": "assets/img/projetos/conecti/14-procura-se.webp",
+      "w": 1400,
+      "h": 1750,
+      "original": "CONECTI/PROCURA-SE.png"
+    }
+  ],
+  "manual-cultura-fmarini": [
+    {
+      "src": "assets/img/projetos/manual-cultura-fmarini/01-capa-1.webp",
+      "w": 1400,
+      "h": 1980,
+      "original": "[FMARINI] Manual de Cultura [V2]/Capa(1).png"
+    },
+    {
+      "src": "assets/img/projetos/manual-cultura-fmarini/02-capa-missao-e-proposito-1.webp",
+      "w": 1400,
+      "h": 1980,
+      "original": "[FMARINI] Manual de Cultura [V2]/Capa_ Missão e Propósito(1).png"
+    },
+    {
+      "src": "assets/img/projetos/manual-cultura-fmarini/03-contracapa-1.webp",
+      "w": 1400,
+      "h": 1980,
+      "original": "[FMARINI] Manual de Cultura [V2]/Contracapa(1).png"
+    },
+    {
+      "src": "assets/img/projetos/manual-cultura-fmarini/04-contracapa-2-1.webp",
+      "w": 1400,
+      "h": 1980,
+      "original": "[FMARINI] Manual de Cultura [V2]/Contracapa (2)(1).png"
+    },
+    {
+      "src": "assets/img/projetos/manual-cultura-fmarini/05-historia-correcoes-1.webp",
+      "w": 1400,
+      "h": 1980,
+      "original": "[FMARINI] Manual de Cultura [V2]/História(CORREÇÕES)(1).png"
+    },
+    {
+      "src": "assets/img/projetos/manual-cultura-fmarini/06-mensagem-final-1.webp",
+      "w": 1400,
+      "h": 1980,
+      "original": "[FMARINI] Manual de Cultura [V2]/Mensagem Final(1).png"
+    },
+    {
+      "src": "assets/img/projetos/manual-cultura-fmarini/07-missao-e-proposito-1.webp",
+      "w": 1400,
+      "h": 1980,
+      "original": "[FMARINI] Manual de Cultura [V2]/Missão e Propósito(1).png"
+    },
+    {
+      "src": "assets/img/projetos/manual-cultura-fmarini/08-o-que-e-um-manual-de-cultura-1.webp",
+      "w": 1400,
+      "h": 1980,
+      "original": "[FMARINI] Manual de Cultura [V2]/O que é um Manual de Cultura(1).png"
+    },
+    {
+      "src": "assets/img/projetos/manual-cultura-fmarini/09-sumario-1.webp",
+      "w": 1400,
+      "h": 1980,
+      "original": "[FMARINI] Manual de Cultura [V2]/Sumário(1).png"
+    }
+  ],
+  "manual-cultura-jsabbag": [
+    {
+      "src": "assets/img/projetos/manual-cultura-jsabbag/01-jsabbag-1.webp",
+      "w": 1400,
+      "h": 991,
+      "original": "JSABBAG/JSABBAG_1.png"
+    },
+    {
+      "src": "assets/img/projetos/manual-cultura-jsabbag/02-jsabbag-2.webp",
+      "w": 1400,
+      "h": 991,
+      "original": "JSABBAG/JSABBAG_2.png"
+    },
+    {
+      "src": "assets/img/projetos/manual-cultura-jsabbag/03-jsabbag-3.webp",
+      "w": 1400,
+      "h": 991,
+      "original": "JSABBAG/JSABBAG_3.png"
+    },
+    {
+      "src": "assets/img/projetos/manual-cultura-jsabbag/04-jsabbag-4.webp",
+      "w": 1400,
+      "h": 991,
+      "original": "JSABBAG/JSABBAG_4.png"
+    },
+    {
+      "src": "assets/img/projetos/manual-cultura-jsabbag/05-jsabbag-5.webp",
+      "w": 1400,
+      "h": 991,
+      "original": "JSABBAG/JSABBAG_5.png"
+    },
+    {
+      "src": "assets/img/projetos/manual-cultura-jsabbag/06-jsabbag-6.webp",
+      "w": 1400,
+      "h": 991,
+      "original": "JSABBAG/JSABBAG_6.png"
+    },
+    {
+      "src": "assets/img/projetos/manual-cultura-jsabbag/07-jsabbag-capa.webp",
+      "w": 1400,
+      "h": 1156,
+      "original": "JSABBAG/JSABBAG_Capa.png"
+    }
+  ],
+  "gabriela-ribeiro-fisio": [
+    {
+      "src": "assets/img/projetos/gabriela-ribeiro-fisio/01-captura-de-tela-2026-10-16-141557.webp",
+      "w": 1400,
+      "h": 636,
+      "original": "Gabriela Ribeiro Fisio/Captura de tela 2026-10-16 141557.png"
+    },
+    {
+      "src": "assets/img/projetos/gabriela-ribeiro-fisio/02-captura-de-tela-2026-10-16-141612.webp",
+      "w": 1400,
+      "h": 636,
+      "original": "Gabriela Ribeiro Fisio/Captura de tela 2026-10-16 141612.png"
+    },
+    {
+      "src": "assets/img/projetos/gabriela-ribeiro-fisio/03-captura-de-tela-2026-10-16-141631.webp",
+      "w": 1400,
+      "h": 635,
+      "original": "Gabriela Ribeiro Fisio/Captura de tela 2026-10-16 141631.png"
+    },
+    {
+      "src": "assets/img/projetos/gabriela-ribeiro-fisio/04-captura-de-tela-2026-10-16-141648.webp",
+      "w": 1400,
+      "h": 638,
+      "original": "Gabriela Ribeiro Fisio/Captura de tela 2026-10-16 141648.png"
+    },
+    {
+      "src": "assets/img/projetos/gabriela-ribeiro-fisio/05-captura-de-tela-2026-10-16-141705.webp",
+      "w": 1400,
+      "h": 637,
+      "original": "Gabriela Ribeiro Fisio/Captura de tela 2026-10-16 141705.png"
+    },
+    {
+      "src": "assets/img/projetos/gabriela-ribeiro-fisio/06-captura-de-tela-2026-10-16-141726.webp",
+      "w": 1400,
+      "h": 641,
+      "original": "Gabriela Ribeiro Fisio/Captura de tela 2026-10-16 141726.png"
+    },
+    {
+      "src": "assets/img/projetos/gabriela-ribeiro-fisio/07-captura-de-tela-2026-10-16-141741.webp",
+      "w": 1400,
+      "h": 632,
+      "original": "Gabriela Ribeiro Fisio/Captura de tela 2026-10-16 141741.png"
+    }
+  ]
+}

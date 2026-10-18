@@ -1,0 +1,87 @@
+/* ==========================================================================
+   TOKENS — paleta, fontes, tipografia, espaçamentos
+   Fonte da paleta: assets/portfolio26/paleta/paleta1.css
+   ========================================================================== */
+
+/* ---------- Fontes ---------- */
+@font-face {
+  font-family: "Retrogression";
+  src: url("../assets/portfolio26/fontes/Retrogression-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Venice Classic";
+  src: url("../assets/portfolio26/fontes/VeniceClassic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Funnel Display";
+  src: url("../assets/portfolio26/fontes/FunnelDisplay-VariableFont_wght.ttf") format("truetype");
+  font-weight: 300 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* ---------- Paleta ---------- */
+  --velvet-orchid: #6C1A8C;
+  --purple-x11:    #AD25CF;
+  --mauve-magic:   #D68FFF;
+  --lavender-veil: #F5D7FD;
+  --lavender-mist: #FAEFFD;
+  --frozen-water:  #CBFBFD;
+  --baby-blue-ice: #97BCFF;
+  --sapphire-sky:  #306EDF;
+  --navy:          #000078;
+  --carbon-black:  #202020;
+
+  /* ---------- Papéis semânticos ---------- */
+  --bg-light:   var(--lavender-mist);
+  --bg-dark:    var(--carbon-black);
+  --text-dark:  var(--carbon-black);
+  --text-light: var(--lavender-mist);
+  --accent:     var(--purple-x11);
+  --accent-2:   var(--mauve-magic);
+
+  /* ---------- Famílias ---------- */
+  --font-pixel:  "Retrogression", "Courier New", monospace;
+  --font-script: "Venice Classic", "Brush Script MT", cursive;
+  --font-body:   "Funnel Display", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  /* ---------- Escala tipográfica fluida (320px → 1440px) ---------- */
+  --fs-xs:   clamp(0.75rem, 0.72rem + 0.15vw, 0.875rem);
+  --fs-sm:   clamp(0.875rem, 0.84rem + 0.2vw, 1rem);
+  --fs-base: clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
+  --fs-lg:   clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);
+  --fs-xl:   clamp(1.75rem, 1.4rem + 1.6vw, 2.75rem);
+  --fs-2xl:  clamp(2.5rem, 1.8rem + 3.4vw, 4.5rem);
+  --fs-hero: clamp(3.5rem, 2rem + 8vw, 9rem);
+
+  /* ---------- Espaçamentos ---------- */
+  --space-2xs: 0.25rem;
+  --space-xs:  0.5rem;
+  --space-sm:  0.75rem;
+  --space-md:  1rem;
+  --space-lg:  1.5rem;
+  --space-xl:  clamp(2rem, 1.5rem + 2vw, 3rem);
+  --space-2xl: clamp(3rem, 2rem + 4vw, 6rem);
+
+  /* ---------- Layout ---------- */
+  --container: 1200px;
+  --gutter: clamp(1rem, 0.5rem + 2.5vw, 2.5rem);
+  --header-h: clamp(3.5rem, 3rem + 1.5vw, 4.5rem);
+
+  /* ---------- Raios, sombras, movimento ---------- */
+  --radius-sm: 0.5rem;
+  --radius-md: 1rem;
+  --shadow-glow: 0 0 1.25rem color-mix(in srgb, var(--purple-x11) 55%, transparent);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 180ms;
+  --dur-med: 350ms;
+}
