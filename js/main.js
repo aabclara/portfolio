@@ -51,8 +51,78 @@
     clone.setAttribute("aria-hidden", "true");
     marquee.appendChild(clone);
 
-    // velocidade constante (px/s) independente do tamanho do conteúdo
-    const PX_POR_SEG = 60;
+    // velocidade: projetos rolam BEM devagar (10px/s), marquees do hero (60px/s)
+    const isProjetoMarquee = marquee.classList.contains("projeto-bloco__marquee");
+    const PX_POR_SEG = isProjetoMarquee ? 10 : 60;
     marquee.style.setProperty("--marquee-speed", `${track.scrollWidth / PX_POR_SEG}s`);
+  });
+})();
+
+/* ---------- Projetos: drag-to-scroll nas linhas de imagens ---------- */
+(() => {
+  document.querySelectorAll(".projeto-bloco__marquee").forEach((marquee) => {
+    let isDown = false;
+    let startX = 0;
+    let scrollStart = 0;
+
+    // Para o drag funcionar, precisamos controlar o scroll horizontal via wrapper
+    // Vamos transformar o marquee em um scroll container quando o usuário arrasta
+    marquee.addEventListener("mousedown", (e) => {
+      // Ignora se clicou numa imagem (para lightbox)
+      if (e.target.tagName === "IMG") return;
+      isDown = true;
+      startX = e.pageX;
+      scrollStart = marquee.scrollLeft;
+      marquee.classList.add("is-dragging");
+      e.preventDefault();
+    });
+
+    marquee.addEventListener("mousemove", (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const dx = e.pageX - startX;
+      marquee.scrollLeft = scrollStart - dx;
+    });
+
+    marquee.addEventListener("mouseup", () => {
+      isDown = false;
+      marquee.classList.remove("is-dragging");
+    });
+
+    marquee.addEventListener("mouseleave", () => {
+      isDown = false;
+      marquee.classList.remove("is-dragging");
+    });
+  });
+})();
+
+/* ---------- Lightbox for project images ---------- */
+(() => {
+  const lightbox = document.createElement('div');
+  lightbox.className = 'lightbox';
+  const img = document.createElement('img');
+  lightbox.appendChild(img);
+  document.body.appendChild(lightbox);
+
+  // Open on click of thumbnail
+  document.querySelectorAll('.projetos__item img').forEach((thumb) => {
+    thumb.addEventListener('click', () => {
+      img.src = thumb.src;
+      lightbox.classList.add('is-open');
+    });
+  });
+
+  // Close when clicking outside the image
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) {
+      lightbox.classList.remove('is-open');
+    }
+  });
+
+  // Close with Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      lightbox.classList.remove('is-open');
+    }
   });
 })();

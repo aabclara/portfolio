@@ -1,0 +1,228 @@
+/* ===========================================================================
+   MEUS PROJETOS SECTION
+   Each project = centred title + description + full-width image marquee
+   =========================================================================== */
+
+.projetos {
+  background: var(--bg-light);
+  padding-block: clamp(3rem, 2rem + 5vw, 6rem);
+  /* NO padding-inline — marquees go edge to edge */
+}
+
+/* ---------- Project block (article) ---------- */
+.projeto-bloco {
+  margin-bottom: clamp(2.5rem, 2rem + 3vw, 4rem);
+}
+
+.projeto-bloco__titulo {
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  font-weight: 700;
+  text-align: center;
+  color: var(--carbon-black);
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+.projeto-bloco__desc {
+  font-family: var(--font-body);
+  font-size: var(--fs-sm);
+  font-weight: 400;
+  text-align: center;
+  color: var(--carbon-black);
+  opacity: 0.7;
+  margin: 0.25rem 0 1rem;
+  padding-inline: 1rem;
+}
+
+/* ---------- Marquee wrapper inside each block ---------- */
+/* Override the dark .marquee base from hero.css */
+.projeto-bloco__marquee.marquee {
+  background: transparent !important;
+  color: var(--carbon-black);
+  padding-block: 0;
+  cursor: grab;
+}
+
+.projeto-bloco__marquee.marquee.is-dragging {
+  cursor: grabbing;
+}
+
+/* ---------- Track ---------- */
+.projetos__track {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: clamp(0.5rem, 1vw, 1rem);
+  padding-right: clamp(0.5rem, 1vw, 1rem);
+  animation: marquee var(--marquee-speed, 120s) linear infinite;
+}
+
+/* Pause on hover (if not dragging, JS handles this) */
+.projeto-bloco__marquee:hover .projetos__track {
+  animation-play-state: paused;
+}
+
+/* ---------- Images ---------- */
+.projetos__item {
+  list-style: none;
+  flex-shrink: 0;
+}
+
+.projetos__item img {
+  max-height: 11rem;
+  height: auto;
+  width: auto;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform var(--dur-med, 0.3s) var(--ease-out, ease-out);
+  pointer-events: auto;
+}
+
+.projetos__item img:hover {
+  transform: scale(1.04);
+}
+
+/* ---------- Lightbox overlay ---------- */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.lightbox.is-open {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 12px;
+  cursor: default;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* ===========================================================================
+   FALE COMIGO + FOOTER
+   =========================================================================== */
+
+/* ── aabclara marquee before footer ── */
+/* Already styled by .marquee base in hero.css */
+
+/* ── Fale Comigo section ── */
+.fale-comigo {
+  background: var(--carbon-black);
+  color: var(--lavender-mist);
+  text-align: center;
+  padding-block: clamp(3rem, 2rem + 4vw, 5rem);
+  padding-inline: var(--gutter);
+}
+
+.fale-comigo__titulo {
+  font-size: var(--fs-2xl);
+  font-weight: 400;
+  line-height: 1.1;
+  color: var(--lavender-mist);
+  margin: 0 0 1.5rem;
+}
+
+.fale-comigo__texto {
+  font-family: var(--font-body);
+  font-size: var(--fs-sm);
+  font-weight: 400;
+  color: var(--lavender-mist);
+  opacity: 0.85;
+  max-width: 36rem;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+/* Social icons row in footer */
+.fale-comigo__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.75rem, 1.5vw, 1.25rem);
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2.5rem;
+}
+
+.fale-comigo__social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform var(--dur-fast) var(--ease-out);
+}
+
+.fale-comigo__social a:hover {
+  transform: scale(1.15);
+}
+
+.fale-comigo__social img {
+  width: 28px;
+  height: 28px;
+  /* make icons light for dark bg */
+  filter: brightness(0) invert(1);
+}
+
+/* ── Footer bottom ── */
+.site-footer {
+  background: var(--carbon-black);
+  color: var(--lavender-mist);
+  text-align: center;
+  padding-block: 1.5rem 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.site-footer__logo {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.site-footer__logo img {
+  width: clamp(5rem, 3rem + 5vw, 7rem);
+  height: auto;
+  filter: brightness(0) invert(1);
+}
+
+.site-footer__text {
+  font-family: var(--font-body);
+  font-size: var(--fs-xs);
+  opacity: 0.6;
+  margin: 0;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .projetos__item img {
+    max-height: 9rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .projetos__item img {
+    max-height: 6.5rem;
+  }
+
+  .projeto-bloco__titulo {
+    font-size: var(--fs-sm, 0.875rem);
+  }
+
+  .projeto-bloco__desc {
+    font-size: 0.75rem;
+  }
+
+  .fale-comigo__social img {
+    width: 24px;
+    height: 24px;
+  }
+}
