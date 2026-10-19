@@ -48,130 +48,257 @@
   cursor: grabbing;
 }
 
-/* ---------- Track ---------- */
-.projetos__track {
-  display: flex;
-  flex-shrink: 0;
-  align-items: center;
-  gap: clamp(0.5rem, 1vw, 1rem);
-  padding-right: clamp(0.5rem, 1vw, 1rem);
-  animation: marquee var(--marquee-speed, 120s) linear infinite;
+/* ---------- Track (Onde ficam as imagens) ---------- */
+.projeto-bloco__marquee .projetos__track {
+  animation: none !important;
+  /* Desliga o carrossel automático */
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  padding-right: 0;
+
+  /* Esconde a barra de rolagem para ficar clean */
+  scrollbar-width: none;
 }
 
-/* Pause on hover (if not dragging, JS handles this) */
-.projeto-bloco__marquee:hover .projetos__track {
-  animation-play-state: paused;
+.projeto-bloco__marquee .projetos__track::-webkit-scrollbar {
+  display: none;
 }
 
-/* ---------- Images ---------- */
-.projetos__item {
-  list-style: none;
-  flex-shrink: 0;
+.projeto-bloco__marquee {
+  position: relative;
 }
 
-.projetos__item img {
-  max-height: 11rem;
-  height: auto;
-  width: auto;
-  object-fit: cover;
-  border-radius: 6px;
+/* ---------- Setas de Navegação ---------- */
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  background: var(--carbon-black);
+  color: var(--lavender-mist);
+  border: 2px solid var(--purple-x11);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
   cursor: pointer;
-  transition: transform var(--dur-med, 0.3s) var(--ease-out, ease-out);
-  pointer-events: auto;
+  z-index: 10;
+  transition: transform var(--dur-fast), background var(--dur-fast), box-shadow var(--dur-fast);
+}
+
+.nav-arrow:hover {
+  background: var(--purple-x11);
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 4px 12px color-mix(in srgb, var(--purple-x11) 50%, transparent);
+}
+
+.nav-arrow svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Posição das setas (descoladas das bordas) */
+.nav-prev {
+  left: clamp(10px, 2vw, 30px);
+}
+
+.nav-next {
+  right: clamp(10px, 2vw, 30px);
+}
+
+/* Para a imagem parar certinho no meio quando clica */
+.projetos__item {
+  scroll-snap-align: center;
+}
+
+/* ---------- Override do Marquee Original ---------- */
+.projeto-bloco__marquee.marquee {
+  background: transparent !important;
+  padding-block: 0;
+  position: relative;
+  display: block;
+  /* Desliga o flexbox do hero.css que quebrava as setas */
+  overflow: visible;
+  /* Deixa as setas "vazarem" para os lados se precisarem */
+}
+
+/* ---------- Track (Onde ficam as imagens) ---------- */
+.projeto-bloco__marquee .projetos__track {
+  animation: none !important;
+  /* DESLIGA O CARROSSEL AUTOMÁTICO DE VEZ */
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  padding-right: 0;
+
+  /* Esconde a barra de rolagem (Fica mais elegante) */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.projeto-bloco__marquee .projetos__track::-webkit-scrollbar {
+  display: none;
+}
+
+/* ---------- Setas de Navegação ---------- */
+.nav-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  background: var(--carbon-black);
+  color: var(--lavender-mist);
+  border: 2px solid var(--purple-x11);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  z-index: 20;
+  /* Garante que fiquem acima das imagens */
+  transition: transform var(--dur-fast), background var(--dur-fast), box-shadow var(--dur-fast);
+}
+
+.nav-arrow:hover {
+  background: var(--purple-x11);
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 4px 12px color-mix(in srgb, var(--purple-x11) 50%, transparent);
+}
+
+.nav-arrow svg {
+  width: 24px;
+  height: 24px;
+}
+
+.nav-prev {
+  left: 10px;
+}
+
+.nav-next {
+  right: 10px;
+}
+
+/* Centraliza a imagem certinho no clique */
+.projetos__item {
+  scroll-snap-align: center;
+}
+
+/* ---------- Tamanho das Imagens dos Projetos (Tamanho Reduzido) ---------- */
+.projetos__item img {
+  /* Altura reduzida: mínimo de 180px, máximo de 320px */
+  height: clamp(180px, 25vh, 320px);
+  width: auto;
+  max-width: none;
+  object-fit: contain;
+
+  border-radius: 8px;
+  box-shadow: 0 4px 14px color-mix(in srgb, var(--carbon-black) 15%, transparent);
+  transition: transform var(--dur-fast) var(--ease-out), box-shadow var(--dur-fast);
+  cursor: pointer;
 }
 
 .projetos__item img:hover {
-  transform: scale(1.04);
+  transform: scale(1.03);
+  box-shadow: 0 8px 24px color-mix(in srgb, var(--purple-x11) 30%, transparent);
 }
 
-/* ---------- Lightbox overlay ---------- */
-.lightbox {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  display: none;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 1000;
-}
-
-.lightbox.is-open {
-  display: flex;
-}
-
-.lightbox img {
-  max-width: 90vw;
-  max-height: 90vh;
-  border-radius: 12px;
-  cursor: default;
-  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+/* Responsivo para ecrãs menores (telemóveis) */
+@media (max-width: 600px) {
+  .projetos__item img {
+    /* Altura ainda mais compacta para ecrãs pequenos */
+    height: clamp(120px, 20vh, 180px);
+  }
 }
 
 /* ===========================================================================
    FALE COMIGO + FOOTER
    =========================================================================== */
 
-/* ── aabclara marquee before footer ── */
-/* Already styled by .marquee base in hero.css */
-
-/* ── Fale Comigo section ── */
 .fale-comigo {
   background: var(--carbon-black);
   color: var(--lavender-mist);
   text-align: center;
-  padding-block: clamp(3rem, 2rem + 4vw, 5rem);
+  /* Padding vertical super reduzido (cortamos o excesso de altura) */
+  padding-block: clamp(1.5rem, 2vw, 2rem);
   padding-inline: var(--gutter);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .fale-comigo__titulo {
-  font-size: var(--fs-2xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.5rem, 2vw, 1rem);
+  font-size: clamp(2.2rem, 1.2rem + 4vw, 4.6rem);
   font-weight: 400;
-  line-height: 1.1;
   color: var(--lavender-mist);
-  margin: 0 0 1.5rem;
+  margin-bottom: 0.25rem;
+  /* Quase sem margem abaixo do título */
+}
+
+.fale-comigo__titulo .pixel {
+  font-family: var(--font-pixel);
+  transition: color var(--dur-fast);
+  margin-right: -0.06em;
+}
+
+.fale-comigo__titulo .script {
+  font-family: var(--font-script);
+  font-size: 1.12em;
+}
+
+.fale-comigo__titulo:hover .pixel {
+  color: var(--purple-x11);
+}
+
+.fale-comigo__titulo .sparkle {
+  width: 0.45em;
 }
 
 .fale-comigo__texto {
   font-family: var(--font-body);
-  font-size: var(--fs-sm);
-  font-weight: 400;
-  color: var(--lavender-mist);
-  opacity: 0.85;
-  max-width: 36rem;
-  margin: 0 auto 2rem;
-  line-height: 1.6;
+  font-size: var(--fs-base);
+  line-height: 1.5;
+  max-width: 38rem;
+  margin-bottom: 1rem;
+  /* Distância bem menor para os ícones */
 }
 
-/* Social icons row in footer */
 .fale-comigo__social {
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: clamp(0.75rem, 1.5vw, 1.25rem);
-  list-style: none;
-  padding: 0;
-  margin: 0 0 2.5rem;
+  gap: clamp(0.6rem, 1vw, 1rem);
+  /* Ícones mais próximos */
 }
 
 .fale-comigo__social a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-items: center;
+  width: clamp(1.8rem, 2.5vw, 2.4rem);
+  /* Área de clique menor */
+  aspect-ratio: 1;
+  border-radius: var(--radius-sm);
   transition: transform var(--dur-fast) var(--ease-out);
 }
 
-.fale-comigo__social a:hover {
-  transform: scale(1.15);
+.fale-comigo__social img {
+  width: clamp(1.2rem, 1.8vw, 1.5rem);
+  /* Tamanho do ícone bem delicado */
+  height: auto;
+  transition: filter var(--dur-fast) var(--ease-out);
 }
 
-.fale-comigo__social img {
-  width: 28px;
-  height: 28px;
-  /* make icons light for dark bg */
-  filter: brightness(0) invert(1);
+.fale-comigo__social a:hover {
+  transform: translateY(-4px);
+}
+
+.fale-comigo__social a:hover img {
+  filter: drop-shadow(0 4px 10px color-mix(in srgb, var(--purple-x11) 60%, transparent));
 }
 
 /* ── Footer bottom ── */
@@ -179,50 +306,107 @@
   background: var(--carbon-black);
   color: var(--lavender-mist);
   text-align: center;
-  padding-block: 1.5rem 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  /* Altura do footer (fundo) muito mais fina */
+  padding-block: 0.8rem 1rem;
+  border-top: 1px solid color-mix(in srgb, var(--lavender-mist) 10%, transparent);
 }
 
 .site-footer__logo {
   display: inline-block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
+  /* Logo quase encostada no texto do ano */
+  transition: transform var(--dur-fast), filter var(--dur-fast);
 }
 
 .site-footer__logo img {
-  width: clamp(5rem, 3rem + 5vw, 7rem);
+  width: clamp(4rem, 3vw + 2rem, 6rem);
+  /* Logo menorzinha */
   height: auto;
-  filter: brightness(0) invert(1);
+}
+
+.site-footer__logo:hover {
+  transform: scale(1.05) rotate(-2deg);
+  filter: drop-shadow(0 0 12px var(--purple-x11));
 }
 
 .site-footer__text {
   font-family: var(--font-body);
   font-size: var(--fs-xs);
-  opacity: 0.6;
+  opacity: 0.7;
   margin: 0;
 }
 
-/* ---------- Responsive ---------- */
-@media (max-width: 900px) {
-  .projetos__item img {
-    max-height: 9rem;
-  }
+/* ---------- Ajuste do Espaço Final dos Projetos ---------- */
+.projetos {
+  /* Mantém o espaço em cima, mas reduz drasticamente o espaço em baixo */
+  padding-bottom: clamp(1rem, 2vw, 2rem) !important;
 }
 
-@media (max-width: 560px) {
-  .projetos__item img {
-    max-height: 6.5rem;
-  }
+/* Remove a margem extra do último projeto para não acumular espaços */
+.projeto-bloco:last-child {
+  margin-bottom: 0 !important;
+}
 
-  .projeto-bloco__titulo {
-    font-size: var(--fs-sm, 0.875rem);
-  }
+/* ===========================================================================
+   LIGHTBOX (Visualização Ampliada da Imagem)
+   =========================================================================== */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 90;
+  opacity: 0;
+  transition: opacity var(--dur-fast);
+}
 
-  .projeto-bloco__desc {
-    font-size: 0.75rem;
-  }
+.lightbox.is-open {
+  display: flex;
+  opacity: 1;
+}
 
-  .fale-comigo__social img {
-    width: 24px;
-    height: 24px;
-  }
+.lightbox img {
+  max-width: 90vw;
+  max-height: 75vh;
+  margin-top: 60px;
+  border-radius: 8px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+  object-fit: contain;
+}
+
+/* ---------- Botão de Fechar (X) ---------- */
+.lightbox-close {
+  position: absolute;
+  top: clamp(90px, 12vh, 120px);
+  right: clamp(15px, 3vw, 30px);
+  width: 44px;
+  height: 44px;
+  background: var(--carbon-black);
+  color: var(--lavender-mist);
+  border: 2px solid var(--purple-x11);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform var(--dur-fast), background var(--dur-fast), box-shadow var(--dur-fast);
+  z-index: 9999;
+  /* Blindagem máxima para ele aparecer sempre */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-close:hover {
+  background: var(--purple-x11);
+  transform: scale(1.1);
+}
+
+.lightbox-close svg {
+  width: 24px;
+  height: 24px;
+  stroke: var(--lavender-mist);
+  /* Força a cor do ícone */
 }
