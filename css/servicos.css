@@ -1,0 +1,146 @@
+/* ==========================================================================
+   TÍTULO DE SEÇÃO (reutilizável) — "O que eu Faço", "Meus Projetos"...
+   ========================================================================== */
+.titulo-secao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.6rem, 2.5vw, 2rem);
+  font-size: clamp(2.2rem, 1.2rem + 4vw, 4.6rem);
+  font-weight: 400;
+  line-height: 1;
+  color: var(--carbon-black);
+  text-align: center;
+  white-space: nowrap;
+  margin-bottom: clamp(2rem, 4vw, 3.5rem);
+}
+
+.titulo-secao .pixel {
+  font-family: var(--font-pixel);
+  margin-right: -0.06em;
+  transition: color var(--dur-fast);
+}
+
+.titulo-secao .script {
+  font-family: var(--font-script);
+  font-size: 1.12em;
+}
+
+.titulo-secao:hover .pixel {
+  color: var(--purple-x11);
+}
+
+.titulo-secao .sparkle {
+  width: 0.45em;
+}
+
+/* ==========================================================================
+   O QUE EU FAÇO
+   ========================================================================== */
+.servicos,
+.projetos {
+  background: var(--bg-light);
+  padding-block: clamp(3rem, 2rem + 5vw, 6rem);
+  padding-inline: clamp(1.25rem, 5vw, 4rem);
+}
+
+.servicos__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1rem, 2.5vw, 2rem);
+  max-width: 62rem;
+  margin-inline: auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  min-height: clamp(13rem, 11rem + 6vw, 17rem);
+  padding: clamp(1.25rem, 2.5vw, 2rem);
+  background: var(--carbon-black);
+  color: var(--lavender-mist);
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 12px 28px color-mix(in srgb, var(--carbon-black) 30%, transparent);
+  transition: transform var(--dur-med) var(--ease-out), box-shadow var(--dur-med) var(--ease-out);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 30px color-mix(in srgb, var(--purple-x11) 35%, transparent);
+}
+
+.card__icon {
+  width: clamp(2rem, 1.7rem + 1vw, 2.6rem);
+  height: auto;
+  fill: none;
+  stroke: var(--purple-x11);
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform var(--dur-med) var(--ease-out);
+}
+
+.card:hover .card__icon {
+  transform: scale(1.12) rotate(-6deg);
+}
+
+.card__title {
+  font-size: clamp(1.4rem, 1.1rem + 1vw, 1.9rem);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.card__title .pixel {
+  font-family: var(--font-pixel);
+  margin-right: -0.04em;
+  transition: color var(--dur-fast);
+}
+
+.card__title .script {
+  font-family: var(--font-script);
+  font-size: 1.12em;
+}
+
+.card:hover .card__title .pixel {
+  color: var(--purple-x11);
+}
+
+.card__desc {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: clamp(0.85rem, 0.8rem + 0.2vw, 0.98rem);
+  line-height: 1.45;
+  max-width: 16rem;
+}
+
+/* ==========================================================================
+   MARQUEE "aabclara"
+   ========================================================================== */
+.marquee--marca .marquee__item {
+  font-family: var(--font-script);
+  font-size: clamp(1.1rem, 0.95rem + 0.6vw, 1.5rem);
+  text-transform: none;
+  letter-spacing: 0.02em;
+}
+
+/* ---------- Responsivo ---------- */
+@media (max-width: 900px) {
+  .servicos__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .servicos__grid {
+    grid-template-columns: 1fr;
+    max-width: 22rem;
+  }
+
+  .titulo-secao {
+    font-size: clamp(1.8rem, 1rem + 6vw, 2.6rem);
+  }
+}

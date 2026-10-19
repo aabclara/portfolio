@@ -37,11 +37,13 @@
 
 /* ---------- Logo ---------- */
 .hero__logo {
-  width: clamp(7.5rem, 5rem + 12vw, 15rem);
+  width: clamp(5.2rem, 3.45rem + 6.9vw, 9.2rem);
   height: auto;
+  margin-top: clamp(-2rem, -2.5vw, -0.6rem);
   opacity: 0;
-  animation: rise 0.9s var(--ease-out) 0.1s forwards;
+  animation: rise 0.9s var(--ease-out) 1s forwards;
 }
+
 
 /* ---------- Título "PortFólio" ---------- */
 .hero__title {
@@ -81,7 +83,19 @@
   transition: color var(--dur-fast), transform var(--dur-med) var(--ease-out);
 }
 
-.hero__title:hover .script {
+/* Letras pixeladas (P e F) */
+.hero__word .highlight {
+  transition: color var(--dur-fast), transform var(--dur-med) var(--ease-out);
+  margin-right: -0.03em;
+}
+
+/* aproxima o "F" do "ólio" */
+.hero__word .highlight--f {
+  margin-right: -0.22em;
+}
+
+/* Hover: apenas P e F ficam roxos */
+.hero__title:hover .highlight {
   color: var(--purple-x11);
   transform: translateY(-0.05em) rotate(-3deg);
 }
@@ -110,9 +124,6 @@
   background: var(--carbon-black);
   color: var(--lavender-mist);
   padding-block: clamp(0.6rem, 0.4rem + 0.6vw, 1rem);
-  /* esmaece as bordas */
-  -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
-  mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent);
 }
 
 .marquee__track {

@@ -27,7 +27,10 @@
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/hero.css?v=2">
+  <link rel="stylesheet" href="css/sobre.css?v=1">
+  <link rel="stylesheet" href="css/ferramentas.css?v=1">
+  <link rel="stylesheet" href="css/servicos.css?v=1">
 
   <script src="js/main.js" defer></script>
 </head>
@@ -72,18 +75,20 @@
     <!-- ================= HERO ================= -->
     <section class="hero" id="inicio" aria-label="Início">
       <div class="hero__content">
-        <img class="hero__logo" src="assets/portfolio26/recursos/logo_aabclara_escura.svg" alt="aabClara" width="165"
-          height="72">
         <h1 class="hero__title" aria-label="Portfólio">
           <img class="sparkle sparkle--left" src="assets/portfolio26/recursos/brilho.svg" alt="" width="63" height="76">
           <span class="hero__word" aria-hidden="true">
-            <span class="script" style="--i:0">P</span><span style="--i:1">o</span><span style="--i:2">r</span><span
-              style="--i:3">t</span><span class="script" style="--i:4">F</span><span style="--i:5">ó</span><span
-              style="--i:6">l</span><span style="--i:7">i</span><span style="--i:8">o</span>
+            <span class="highlight" style="--i:0">P</span><span class="script" style="--i:1">o</span><span
+              class="script" style="--i:2">r</span><span class="script" style="--i:3">t</span><span
+              class="highlight highlight--f" style="--i:4">F</span><span class="script" style="--i:5">ó</span><span
+              class="script" style="--i:6">l</span><span class="script" style="--i:7">i</span><span class="script"
+              style="--i:8">o</span>
           </span>
           <img class="sparkle sparkle--right" src="assets/portfolio26/recursos/brilho.svg" alt="" width="63"
             height="76">
         </h1>
+        <img class="hero__logo" src="assets/portfolio26/recursos/logo_aabclara_escura.svg" alt="aabClara" width="175"
+          height="82">
       </div>
     </section>
 
@@ -111,11 +116,153 @@
             width="63" height="76"></li>
       </ul>
     </div>
-    <!-- SOBRE MIM -->
-    <!-- FERRAMENTAS / LINGUAGENS -->
-    <!-- O QUE EU FAÇO -->
-    <!-- MARQUEE aabclara -->
-    <!-- MEUS PROJETOS -->
+    <!-- ================= SOBRE MIM ================= -->
+    <section class="sobre" id="sobre" aria-labelledby="sobre-titulo">
+      <div class="sobre__inner">
+        <div class="sobre__texto">
+          <h2 class="sobre__title" id="sobre-titulo" aria-label="Sobre mim">
+            <span aria-hidden="true"><span class="pixel">S</span><span class="script">obre</span>
+              <span class="pixel">M</span><span class="script">im</span></span>
+          </h2>
+
+          <p class="sobre__destaque">
+            Técnica em Informática pelo CEFET-MG e atualmente graduanda em Bacharelado em Sistemas de
+            Informação pela UFCI-MG.
+          </p>
+
+          <p>
+            Desde que me entendo por gente, sou fascinada por arte, criatividade e tecnologia, suas possibilidades e
+            nuances. Essa combinação reflete nos meus projetos, que transitam entre desenvolvimento, design e
+            comunicação, explorando diferentes formas de criar e construir soluções.
+          </p>
+
+          <p>
+            Gosto de encontrar maneiras criativas de resolver problemas e comunicar ideias, sempre buscando unir
+            estética visual e funcionalidade real.
+          </p>
+
+          <p>
+            Para mim, um bom projeto vai além da aparência: <strong>ele precisa ter um propósito real, fazer
+              sentido e ser útil de verdade.</strong>
+          </p>
+        </div>
+
+        <figure class="sobre__foto">
+          <img src="assets/portfolio26/recursos/eu.webp"
+            alt="Foto de Maria Clara, 21 anos, de óculos e cabelo com mechas roxas" width="794" height="800"
+            loading="lazy" decoding="async">
+        </figure>
+      </div>
+    </section>
+    <!-- ================= FERRAMENTAS / LINGUAGENS ================= -->
+    <section class="stack" id="ferramentas" aria-label="Ferramentas e linguagens">
+      <div class="stack__group">
+        <h2 class="stack__title" aria-label="Ferramentas">
+          <span aria-hidden="true"><span class="pixel">F</span><span class="script">erramentas</span></span>
+        </h2>
+        <ul class="stack__list" role="list">
+          <li class="stack__item"><img src="assets/portfolio26/recursos/icone_figma.svg" alt="" width="61" height="61" loading="lazy"><span>Figma</span></li>
+          <li class="stack__item"><img src="assets/portfolio26/recursos/icone_canva.svg" alt="" width="61" height="61" loading="lazy"><span>Canva</span></li>
+          <li class="stack__item"><img src="assets/portfolio26/recursos/icone_capcut.svg" alt="" width="61" height="61" loading="lazy"><span>Capcut</span></li>
+          <li class="stack__item"><img src="assets/portfolio26/recursos/icone_premiere.svg" alt="" width="61" height="61" loading="lazy"><span>Premiere</span></li>
+          <li class="stack__item"><img src="assets/portfolio26/recursos/icone_notion.svg" alt="" width="61" height="61" loading="lazy"><span>Notion</span></li>
+          <li class="stack__item"><img src="assets/portfolio26/recursos/icone_github1.svg" alt="" width="61" height="61" loading="lazy"><span>Github</span></li>
+          <li class="stack__item"><img src="assets/portfolio26/recursos/icone_vscode.svg" alt="" width="61" height="61" loading="lazy"><span>VSCode</span></li>
+        </ul>
+      </div>
+
+      <div class="stack__group">
+        <h2 class="stack__title" aria-label="Linguagens">
+          <span aria-hidden="true"><span class="pixel">L</span><span class="script">inguagens</span></span>
+        </h2>
+        <ul class="stack__list" role="list">
+          <li class="stack__item"><img src="assets/portfolio26/recursos/icone_python.svg" alt="" width="61" height="61" loading="lazy"><span>Python</span></li>
+          <li class="stack__item"><img src="assets/portfolio26/recursos/icone_sql.svg" alt="" width="61" height="61" loading="lazy"><span>SQL</span></li>
+          <li class="stack__item"><img src="assets/portfolio26/recursos/icone_c.svg" alt="" width="61" height="61" loading="lazy"><span>C++</span></li>
+          <li class="stack__item"><img src="assets/portfolio26/recursos/icone_html.svg" alt="" width="61" height="61" loading="lazy"><span>HTML</span></li>
+          <li class="stack__item"><img src="assets/portfolio26/recursos/icone_latez.svg" alt="" width="61" height="61" loading="lazy"><span>LaTeX</span></li>
+        </ul>
+      </div>
+    </section>
+    <!-- ================= O QUE EU FAÇO ================= -->
+    <section class="servicos" id="servicos" aria-labelledby="servicos-titulo">
+      <h2 class="titulo-secao" id="servicos-titulo" aria-label="O que eu faço">
+        <img class="sparkle" src="assets/portfolio26/recursos/brilho.svg" alt="" width="63" height="76">
+        <span aria-hidden="true"><span class="pixel">O</span> <span class="script">que eu</span> <span
+            class="pixel">F</span><span class="script">aço:</span></span>
+        <img class="sparkle sparkle--right" src="assets/portfolio26/recursos/brilho.svg" alt="" width="63"
+          height="76">
+      </h2>
+
+      <ul class="servicos__grid" role="list">
+        <li class="card">
+          <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 3a9 9 0 0 0 0 18c1 0 1.6-.8 1.6-1.6 0-.5-.2-.8-.4-1.1-.3-.3-.4-.6-.4-1 0-.9.7-1.6 1.6-1.6H16a5 5 0 0 0 5-5C21 6.5 17 3 12 3Z" />
+            <circle cx="7.5" cy="11" r="1.2" /><circle cx="10.5" cy="7.5" r="1.2" /><circle cx="15" cy="7.5" r="1.2" />
+          </svg>
+          <h3 class="card__title"><span class="pixel">D</span><span class="script">esign</span> <span class="pixel">G</span><span class="script">ráfico</span></h3>
+          <p class="card__desc">Criação de identidades visuais e materiais gráficos que dão vida às ideias.</p>
+        </li>
+        <li class="card">
+          <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16" />
+          </svg>
+          <h3 class="card__title"><span class="pixel">D</span><span class="script">esenvolvimento</span> <span class="pixel">W</span><span class="script">eb</span></h3>
+          <p class="card__desc">Criação de sites e soluções digitais funcionais e intuitivas.</p>
+        </li>
+        <li class="card">
+          <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="4" width="18" height="14" rx="2" /><path d="M3 8h18M6 6h.01M8.5 6h.01" />
+            <path d="m13 12 6 2-2.5 1L15 18l-2-6Z" />
+          </svg>
+          <h3 class="card__title"><span class="pixel">L</span><span class="script">anding</span> <span class="pixel">P</span><span class="script">ages</span></h3>
+          <p class="card__desc">Páginas estratégicas para divulgar ideias, produtos e serviços.</p>
+        </li>
+        <li class="card">
+          <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 10v4h3l7 4V6L6 10H3ZM16 9a4 4 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11" />
+          </svg>
+          <h3 class="card__title"><span class="pixel">S</span><span class="script">ocial</span> <span class="pixel">M</span><span class="script">edia</span></h3>
+          <p class="card__desc">Produção de conteúdos criativos para conectar projetos, marcas e pessoas.</p>
+        </li>
+        <li class="card">
+          <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="3" /><path d="M8 7v6M12 7v10M16 7v4" />
+          </svg>
+          <h3 class="card__title"><span class="pixel">G</span><span class="script">estão de</span> <span class="pixel">P</span><span class="script">rojetos</span></h3>
+          <p class="card__desc">Organização de tarefas e etapas para tirar projetos do papel.</p>
+        </li>
+        <li class="card">
+          <svg class="card__icon" viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="3" width="7.5" height="7.5" rx="2" /><rect x="13.5" y="3" width="7.5" height="7.5" rx="2" />
+            <rect x="3" y="13.5" width="7.5" height="7.5" rx="2" /><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="2" />
+          </svg>
+          <h3 class="card__title"><span class="pixel">O</span><span class="script">rganização</span> <span class="pixel">D</span><span class="script">igital</span></h3>
+          <p class="card__desc">Templates e dashboards no Notion para organizar a rotina e simplificar tarefas.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ================= MARQUEE aabclara ================= -->
+    <div class="marquee marquee--marca" aria-hidden="true">
+      <ul class="marquee__track" role="list">
+        <li class="marquee__item">aabclara</li>
+        <li><img class="marquee__sparkle" src="assets/portfolio26/recursos/brilho.svg" alt="" width="63" height="76"></li>
+      </ul>
+    </div>
+
+    <!-- ================= MEUS PROJETOS ================= -->
+    <section class="projetos" id="projetos" aria-labelledby="projetos-titulo">
+      <h2 class="titulo-secao" id="projetos-titulo" aria-label="Meus projetos">
+        <img class="sparkle" src="assets/portfolio26/recursos/brilho.svg" alt="" width="63" height="76">
+        <span aria-hidden="true"><span class="pixel">M</span><span class="script">eus</span> <span
+            class="pixel">P</span><span class="script">rojetos</span></span>
+        <img class="sparkle sparkle--right" src="assets/portfolio26/recursos/brilho.svg" alt="" width="63"
+          height="76">
+      </h2>
+      <!-- projetos entram aqui -->
+    </section>
+
     <!-- FALE COMIGO -->
   </main>
 
